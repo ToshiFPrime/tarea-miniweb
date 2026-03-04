@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Ivan Toshiaky</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ivan Toshiaky Justiniano Ibañez</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <button id="toggle-mode">Modo Oscuro</button>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Sobre Mí</h2>
+            <p>¡Hola! Soy estudiante de <strong>Ingeniería en Sistemas</strong>. Me apasiona profundizar en la tecnología, entender cómo funcionan los equipos desde su núcleo y tener la capacidad de modificarlos para optimizar su rendimiento.</p>
+            <p>Siempre estoy buscando nuevos retos técnicos y me dedico a ofrecer soluciones de hardware y software eficientes para cada necesidad.</p>
+        </section>
+
+        <section id="servicios">
+            <h2>Mis Servicios</h2>
+            <p>Ofrezco soluciones tecnológicas con una excelente relación calidad-precio. Mis especialidades son:</p>
+            <ul>
+                <li><strong>Armado y Mantenimiento de PC:</strong> Ensamblaje de equipos a medida (gamers, diseño, oficina) a buen precio. Limpieza, optimización y cambio de pasta térmica.</li>
+                <li><strong>Redes:</strong> Diseño, configuración y mantenimiento de redes locales (LAN) para mejorar tu conectividad y seguridad.</li>
+                <li><strong>Sistemas:</strong> Instalación de software, formateo, diagnóstico de fallos y configuración de sistemas operativos.</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Necesitas armar una PC o soporte técnico? Escríbeme:</p>
+            
+            <form id="contactForm" action="https://formsubmit.co/serverprof01@gmail.com" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="email" placeholder="tu@email.com">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntame qué necesitas..."></textarea>
+
+                <input type="hidden" name="_captcha" value="false">
+                
+                <button type="submit" id="btn-enviar">Enviar Mensaje</button>
+            </form>
+            
+            <p id="error-msg" class="error-texto">⚠️ Por favor, completa todos los campos antes de enviar.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

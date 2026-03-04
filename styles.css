@@ -1,0 +1,129 @@
+/* --- ESTILOS GENERALES --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Un gris azulado claro */
+    color: #333;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- CABECERA Y MENÚ --- */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #0056b3;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background: #0056b3;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+/* --- SECCIONES --- */
+section {
+    margin: 30px auto;
+    padding: 25px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: white;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Sombra ligera */
+}
+
+section h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+}
+
+/* --- FORMULARIO Y BOTONES --- */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+/* Estilo para los botones (Incluye el Hover obligatorio) */
+#btn-enviar, #toggle-mode {
+    margin-top: 15px;
+    padding: 12px;
+    cursor: pointer;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s;
+}
+
+#btn-enviar:hover, #toggle-mode:hover {
+    background-color: #003d82; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.02); /* Efecto de crecimiento leve */
+}
+
+/* Mensaje de error */
+.error-texto {
+    color: #d9534f;
+    font-weight: bold;
+    display: none; /* Oculto por defecto */
+    margin-top: 15px;
+}
+
+/* --- CLASES PARA MODO OSCURO --- */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode section {
+    background-color: #1e1e1e;
+    border-color: #333;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+
+.dark-mode h1, .dark-mode section h2 {
+    color: #4da3ff;
+    border-bottom-color: #4da3ff;
+}
+
+.dark-mode input, .dark-mode textarea {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
